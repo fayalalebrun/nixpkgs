@@ -17,13 +17,13 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "intel-lpmd";
-  version = "0.0.8";
+  version = "0.0.9";
 
   src = fetchFromGitHub {
     owner = "intel";
     repo = "intel-lpmd";
     rev = "refs/tags/v${finalAttrs.version}";
-    hash = "sha256-Af8H+hX9S7+AlFxFvClsRgEgt+bYqy9T+IWUkbUPVEw=";
+    hash = "sha256-hM52KFgzHuXqadQ9TgRhEwFJsyiv8DyNdpGTWZAC0jU=";
   };
 
   nativeBuildInputs = [
